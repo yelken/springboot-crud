@@ -1,4 +1,4 @@
-# Spring Boot, MySQL, JPA, Hibernate Rest API Tutorial
+# Spring Boot, MySQL, JPA, Hibernate Rest API
 
 Aplicação utilizando Spring Boot, MySQL, JPA e Hibernate.
 
