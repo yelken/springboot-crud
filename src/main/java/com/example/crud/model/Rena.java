@@ -4,6 +4,7 @@ import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import org.springframework.data.annotation.CreatedDate;
 import org.springframework.data.annotation.LastModifiedDate;
 import org.springframework.data.jpa.domain.support.AuditingEntityListener;
+import org.springframework.transaction.annotation.Transactional;
 
 import javax.persistence.*;
 import javax.validation.constraints.NotBlank;
@@ -34,6 +35,9 @@ public class Rena {
     @Temporal(TemporalType.TIMESTAMP)
     @LastModifiedDate
     private Date updatedAt;
+
+    @Transactional
+    private String coiso;
 
     public Long getId() {
         return id;
@@ -75,4 +79,11 @@ public class Rena {
         this.updatedAt = updatedAt;
     }
 
+    public String getCoiso() {
+        return coiso;
+    }
+    
+    public void setCoiso(String coiso) {
+        this.coiso = coiso;
+    }
 }
