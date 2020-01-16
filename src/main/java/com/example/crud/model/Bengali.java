@@ -10,7 +10,7 @@ import javax.validation.constraints.NotBlank;
 import java.util.Date;
 
 @Entity
-@Table(name = "notes")
+@Table(name = "bengali")
 @EntityListeners(AuditingEntityListener.class)
 @JsonIgnoreProperties(value = {"createdAt", "updatedAt"},
         allowGetters = true)
